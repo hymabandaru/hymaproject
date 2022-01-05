@@ -1,0 +1,35 @@
+.parent{
+    display:flex;
+    width:100%;
+    padding:2%;
+    margin:2%;
+    flex-wrap: wrap;
+}
+.parent>.card{
+    width:auto;
+    border:5px solid yellowgreen;
+    padding:1%;
+    margin:1%;
+}
+button{
+    color:seagreen;
+    width:50%;
+}
+div {
+    text-align:center;
+}
+ /*mobile device 320px to 480px */
+ /* tablets 481 to 768px */
+ /* min desktops 769 to 1024 */
+ /* larger desktops 1025 to 1200 */
+ @media screen and {min-width: 481} and {max-width: 768}
+     {
+    .parent{
+        .card.div{
+        display:flex;
+        flex-direction:column;
+    }
+    .parent>.card{
+        width:90%;
+    }
+ }
